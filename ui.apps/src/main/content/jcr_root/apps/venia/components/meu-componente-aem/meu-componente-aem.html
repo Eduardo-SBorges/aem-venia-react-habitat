@@ -1,0 +1,13 @@
+<div data-component="ComponenteTexto" data-prop-text="${properties.text}"></div>
+<div data-component="ComponenteImagem" data-prop-image="${properties.fileReference}"></div>
+<!-- <div data-component="ComponenteMultifield" data-prop-array="${----------}"></div> -->
+
+
+<!--/* Get all child resources */-->
+<div data-sly-list.continentMultifield="${resource.getChildren}">
+
+    <sly data-sly-list.continent="${continentMultifield.getChildren}">
+        <h2># ${continent.continentName}</h2>
+    </sly>
+    
+</div>

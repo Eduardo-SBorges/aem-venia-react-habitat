@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="nt:unstructured" jcr:title="MeuComponenteAEM" sling:resourceType="cq/gui/components/authoring/dialog">
+	<content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+		<layout jcr:primaryType="nt:unstructured" margin="{Boolean}false" sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns" />
+		<items jcr:primaryType="nt:unstructured">
+			<column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+				<items jcr:primaryType="nt:unstructured">
+					<text cq-msm-lockable="./text" fieldLabel="Meu Texto" jcr:primaryType="nt:unstructured" name="./text" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" />
+					<imageResType jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/hidden" name="./image/sling:resourceType" value="core/wcm/components/image/v2/image" />
+					<image jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" allowUpload="{Boolean}false" autoStart="{Boolean}false" class="cq-droptarget" cq-msm-lockable="./file" fileNameParameter="./fileName" fieldLabel="Selecione uma imagem ou arraste-a para o campo abaixo" fileReferenceParameter="./fileReference" mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]" multiple="{Boolean}false" name="./file" required="{Boolean}true" title="Upload Asset" uploadUrl="${suffix.path}" useHTML5="{Boolean}true" />
+					<continents
+							jcr:primaryType="nt:unstructured"
+							sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+							composite="{Boolean}true"
+							fieldLabel="Continents">
+								<field
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/container"
+										name="./continents">
+										<items jcr:primaryType="nt:unstructured">
+												<continentName
+														jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+														emptyText="Name"
+														name="./continentName"/>
+										</items>
+								</field>
+						</continents>
+				</items>
+			</column>
+		</items>
+	</content>
+</jcr:root>
