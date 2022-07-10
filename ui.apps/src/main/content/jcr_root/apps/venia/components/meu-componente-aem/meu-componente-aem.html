@@ -1,12 +1,14 @@
 <div data-component="ComponenteTexto" data-prop-text="${properties.text}"></div>
 <div data-component="ComponenteImagem" data-prop-image="${properties.fileReference}"></div>
+<!-- <div data-component="ComponenteMultifield" data-prop-text="${error}"></div> -->
 
+<!--
+    O código abaixo funciona, é um multifield com HTL puro.
+    Mas, não nos ajuda porque precisamos fazer com React.
 
-<div data-sly-list.continentMultifield="${resource.getChildren}">
-
-    <sly data-sly-list.continent="${continentMultifield.getChildren}">
-        <h2># ${continent.continentName}</h2>
-        <!-- <div data-component="ComponenteMultifield" data-prop-text="${continent.continentName}"></div> -->
-    </sly>
-    
-</div>
+    <div data-sly-list.continentMultifield="${resource.getChildren}">
+        <sly data-sly-list.continent="${continentMultifield.getChildren}">
+            <h2># ${continent.continentName}</h2>
+        </sly>
+    </div> 
+-->
