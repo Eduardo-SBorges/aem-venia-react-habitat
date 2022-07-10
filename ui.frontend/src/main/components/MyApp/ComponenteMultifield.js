@@ -1,12 +1,13 @@
 import React from 'react';
 
 const ComponenteMultifield = ({ array }) => {
+    React.useEffect(()=> console.log(array),[array])
+
     return (
         <div>
-            <span>Array: </span>
             {array &&
-                array.map(({ continentName }) => {
-                    <span>{continentName}</span>;
+                array.map(({item}) => {
+                    <span>{item}</span>;
                 })}
         </div>
     );

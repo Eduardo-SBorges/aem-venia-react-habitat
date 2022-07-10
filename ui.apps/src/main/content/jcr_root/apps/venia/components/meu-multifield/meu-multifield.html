@@ -1,0 +1,25 @@
+<!--/*
+*  ***********************************************************************
+*  Venia CONFIDENTIAL
+*  ___________________
+*
+*  Copyright 2022 Venia
+*  All Rights Reserved.
+*
+*  NOTICE:  All information contained herein is, and remains the property
+*  of Venia and its suppliers, if any. The intellectual and
+*  technical concepts contained herein are proprietary to Venia
+*  and its suppliers and are protected by trade secret or copyright law.
+*  Dissemination of this information or reproduction of this material
+*  is strictly forbidden unless prior written permission is obtained
+*  from Venia.
+*  ***********************************************************************
+*/-->
+
+<sly data-sly-use.meuMultifieldModel="com.venia.core.models.common.MeuMultifield">
+
+     <div data-component="ComponenteMultifield" data-prop-array="${meuMultifieldModel.array}"></div>
+</sly>
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

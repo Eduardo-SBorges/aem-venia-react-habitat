@@ -10,23 +10,22 @@
 					<imageResType jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/hidden" name="./image/sling:resourceType" value="core/wcm/components/image/v2/image" />
 					<image jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/fileupload" allowUpload="{Boolean}false" autoStart="{Boolean}false" class="cq-droptarget" cq-msm-lockable="./file" fileNameParameter="./fileName" fieldLabel="Selecione uma imagem ou arraste-a para o campo abaixo" fileReferenceParameter="./fileReference" mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]" multiple="{Boolean}false" name="./file" required="{Boolean}true" title="Upload Asset" uploadUrl="${suffix.path}" useHTML5="{Boolean}true" />
 					<continents
-							jcr:primaryType="nt:unstructured"
 							sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-							composite="{Boolean}true"
-							fieldLabel="Continents">
-								<field
-										jcr:primaryType="nt:unstructured"
-										sling:resourceType="granite/ui/components/coral/foundation/container"
-										name="./continents">
-										<items jcr:primaryType="nt:unstructured">
-												<continentName
-														jcr:primaryType="nt:unstructured"
-														sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-														emptyText="Name"
-														name="./continentName"/>
-										</items>
-								</field>
-						</continents>
+							fieldDescription="Click '+' to add a new link"
+							fieldLabel="Continentes"
+							jcr:primaryType="nt:unstructured"
+							composite="{Boolean}true">
+							<field sling:resourceType="granite/ui/components/coral/foundation/container"
+											jcr:primaryType="nt:unstructured" name="./continent">
+									<items jcr:primaryType="nt:unstructured">
+											<continentName
+													sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+													fieldLabel="Link Text"
+													jcr:primaryType="nt:unstructured"
+													name="./continentName" />
+									</items>
+							</field>
+					</continents>
 				</items>
 			</column>
 		</items>

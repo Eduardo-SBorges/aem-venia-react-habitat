@@ -1,0 +1,50 @@
+{
+    "project-settings": {
+        "code-owner": "Venia",
+        "bundle-path": "../core/src/main/java",
+        "test-path": "../core/src/test/java",
+        "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+        "component-path": "venia",
+        "model-interface-pkg": "com.venia.core.models.common",
+        "model-impl-pkg": "com.venia.core.models.common.impl"
+    },
+    "name": "meu-multifield",
+    "title": "Multifield Component",
+    "group": "Venia - Content",
+    "type": "components",
+    "options": {
+        "js": false,
+        "jstxt": false,
+        "css": false,
+        "csstxt": false,
+        "html": false,
+        "html-content": false,
+        "slingmodel": true,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": true,
+        "model-adaptables": [
+            "request"
+        ],
+        "generic-javadoc": false,
+        "properties": [
+            {
+                "field": "array",
+                "type": "multifield",
+                "model-name": "MultifieldModel",
+                "use-existing-model": false,
+                "label": "Lista de Itens",
+                "json-expose": true,
+                "items": [
+                    {
+                        "field": "item",
+                        "type": "textfield",
+                        "label": "Item",
+                        "json-expose": true,
+                        "json-property": "item"
+                    }
+                ]
+            }
+        ]
+    }
+}
