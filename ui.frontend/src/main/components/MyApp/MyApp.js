@@ -14,7 +14,6 @@ class MyApp extends ReactHabitat.Bootstrapper {
         builder.register(ComponenteTexto).as('ComponenteTexto');
         builder.register(ComponenteImagem).as('ComponenteImagem');
         builder.register(ComponenteMultifield).as('ComponenteMultifield');
-        
 
         // Finally, set the container:
         this.setContainer(builder.build());
@@ -23,8 +22,3 @@ class MyApp extends ReactHabitat.Bootstrapper {
 
 // Always export a 'new' instance so it immediately evokes:
 export default new MyApp();
-
-
-/* 
-<div data-component="ComponenteTexto" data-prop-text="${properties.text}"></div>
-*/

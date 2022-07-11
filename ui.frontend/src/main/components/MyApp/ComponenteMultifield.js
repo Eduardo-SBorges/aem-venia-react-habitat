@@ -1,14 +1,11 @@
 import React from 'react';
 
-const ComponenteMultifield = ({ array }) => {
-    React.useEffect(()=> console.log(array),[array])
+const ComponenteMultifield = ({ multifield }) => {
+    const array = multifield.split(',');
 
     return (
         <div>
-            {array &&
-                array.map(({item}) => {
-                    <span>{item}</span>;
-                })}
+            <ul>{array.map((item) => <li>{item}</li>)}</ul>
         </div>
     );
 };

@@ -36,7 +36,7 @@
         "panel": "shared",
         "clear": true
       },
-      "command": "cd ui.apps && mvn clean install -PautoInstallPackage -X",
+      "command": "cd ui.apps && mvn clean install -PautoInstallPackage",
       "problemMatcher": []
     },
     /* ---------- Maven core & ui.apps ---------- */
