@@ -5,11 +5,11 @@
         "test-path": "../core/src/test/java",
         "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
         "component-path": "venia",
-        "model-interface-pkg": "com.venia.core.models.common",
-        "model-impl-pkg": "com.venia.core.models.common.impl"
+        "model-interface-pkg": "com.venia.core.models.commerce",
+        "model-impl-pkg": "com.venia.core.models.commerce"
     },
-    "name": "meu-multifield-countries",
-    "title": "Multifield Component 2",
+    "name": "meu-componente-multifield",
+    "title": "Meu Componente Multifield",
     "group": "Venia - Content",
     "type": "components",
     "options": {
@@ -19,10 +19,10 @@
         "csstxt": false,
         "html": false,
         "html-content": false,
-        "slingmodel": true,
+        "slingmodel": false,
         "testclass": false,
         "junit-major-version": 5,
-        "content-exporter": true,
+        "content-exporter": false,
         "model-adaptables": [
             "request"
         ],
@@ -34,14 +34,14 @@
                 "model-name": "MultifieldModel",
                 "use-existing-model": false,
                 "label": "Lista de Países",
-                "json-expose": true,
+                "json-expose": false,
                 "items": [
                     {
-                        "field": "countries",
+                        "field": "country",
                         "type": "textfield",
-                        "label": "Países",
-                        "json-expose": true,
-                        "json-property": "countries"
+                        "label": "Nome do País",
+                        "description": "Aqui você pode adicionar uma lista de países.",
+                        "json-expose": false
                     }
                 ]
             }
