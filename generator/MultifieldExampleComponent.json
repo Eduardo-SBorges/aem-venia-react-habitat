@@ -8,8 +8,8 @@
         "model-interface-pkg": "com.venia.core.models.common",
         "model-impl-pkg": "com.venia.core.models.common.impl"
     },
-    "name": "meu-multifield",
-    "title": "Multifield Component",
+    "name": "meu-multifield-countries",
+    "title": "Multifield Component 2",
     "group": "Venia - Content",
     "type": "components",
     "options": {
@@ -29,19 +29,19 @@
         "generic-javadoc": false,
         "properties": [
             {
-                "field": "array",
+                "field": "countries",
                 "type": "multifield",
                 "model-name": "MultifieldModel",
                 "use-existing-model": false,
-                "label": "Lista de Itens",
+                "label": "Lista de Países",
                 "json-expose": true,
                 "items": [
                     {
-                        "field": "item",
+                        "field": "countries",
                         "type": "textfield",
-                        "label": "Item",
+                        "label": "Países",
                         "json-expose": true,
-                        "json-property": "item"
+                        "json-property": "countries"
                     }
                 ]
             }
