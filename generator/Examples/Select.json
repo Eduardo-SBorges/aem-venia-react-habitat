@@ -1,0 +1,81 @@
+{
+  "project-settings": {
+    "code-owner": "Venia",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "venia",
+    "model-interface-pkg": "com.venia.core.models.commerce",
+    "model-impl-pkg": "com.venia.core.models.commerce"
+  },
+  "name": "meu-componente-select",
+  "title": "Meu Componente Select",
+  "group": "Venia - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": false,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": false,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "country",
+        "type": "select",
+        "label": "Selecione um país:",
+        "json-expose": false,
+        "json-property": "country",
+        "attributes": {
+          "defaultValue": "country",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "Brasil",
+            "attributes": {
+              "text": "Brasil",
+              "value": "Brasil"
+            }
+          },
+          {
+            "field": "Japão",
+            "attributes": {
+              "text": "Japão",
+              "value": "Japão"
+            }
+          },
+          {
+            "field": "China",
+            "attributes": {
+              "text": "China",
+              "value": "China"
+            }
+          },
+          {
+            "field": "Portugal",
+            "attributes": {
+              "text": "Portugal",
+              "value": "Portugal"
+            }
+          },
+          {
+            "field": "Espanha",
+            "attributes": {
+              "text": "Espanha",
+              "value": "Espanha"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

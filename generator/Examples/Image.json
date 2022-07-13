@@ -32,7 +32,7 @@
         "field": "image",
         "type": "image",
         "label": "Forneça uma image",
-        "json-expose": true,
+        "json-expose": false,
         "json-property": "image"
       }
     ]

@@ -32,7 +32,7 @@
         "field": "href",
         "type": "pathfield",
         "label": "Redirecionamento do Link",
-        "json-expose": true,
+        "json-expose": false,
         "json-property": "href",
         "attributes": {
           "rootPath": "/content"
@@ -41,7 +41,7 @@
       {
         "field": "isExternal",
         "type": "checkbox",
-        "json-expose": true,
+        "json-expose": false,
         "attributes": {
           "value": "{Boolean}true",
           "text": "Redirecionamento Externo?"
@@ -50,7 +50,7 @@
       {
         "field": "isBlank",
         "type": "checkbox",
-        "json-expose": true,
+        "json-expose": false,
         "attributes": {
           "value": "{Boolean}true",
           "text": "Abrir em uma nova Aba/Página?"
