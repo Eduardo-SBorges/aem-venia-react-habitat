@@ -1,3 +1,5 @@
+import React from 'react'
+
 const ComponenteMultifield = ({ multifield }) => {
     const array = multifield.split(',');
 

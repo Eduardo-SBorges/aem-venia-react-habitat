@@ -1,0 +1,61 @@
+{
+  "project-settings": {
+    "code-owner": "Venia",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "venia",
+    "model-interface-pkg": "com.venia.core.models.commerce",
+    "model-impl-pkg": "com.venia.core.models.commerce"
+  },
+  "name": "meu-componente-pathfield",
+  "title": "Meu Componente Path Field",
+  "group": "Venia - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": false,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": false,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "href",
+        "type": "pathfield",
+        "label": "Redirecionamento do Link",
+        "json-expose": true,
+        "json-property": "href",
+        "attributes": {
+          "rootPath": "/content"
+        }
+      },
+      {
+        "field": "isExternal",
+        "type": "checkbox",
+        "json-expose": true,
+        "attributes": {
+          "value": "{Boolean}true",
+          "text": "Redirecionamento Externo?"
+        }
+      },
+      {
+        "field": "isBlank",
+        "type": "checkbox",
+        "json-expose": true,
+        "attributes": {
+          "value": "{Boolean}true",
+          "text": "Abrir em uma nova Aba/Página?"
+        }
+      }
+    ]
+  }
+}

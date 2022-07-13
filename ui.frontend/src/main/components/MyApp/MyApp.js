@@ -2,6 +2,8 @@ import ReactHabitat from 'react-habitat';
 import ComponenteTexto from './ComponenteTexto';
 import ComponenteImagem from './ComponenteImagem';
 import ComponenteMultifield from './ComponenteMultifield'
+import ComponenteCheckbox from './ComponenteCheckbox';
+import ComponenteLink from './ComponenteLink';
 
 class MyApp extends ReactHabitat.Bootstrapper {
     constructor() {
@@ -14,6 +16,8 @@ class MyApp extends ReactHabitat.Bootstrapper {
         builder.register(ComponenteTexto).as('ComponenteTexto');
         builder.register(ComponenteImagem).as('ComponenteImagem');
         builder.register(ComponenteMultifield).as('ComponenteMultifield');
+        builder.register(ComponenteCheckbox).as('ComponenteCheckbox');
+        builder.register(ComponenteLink).as('ComponenteLink');
 
         // Finally, set the container:
         this.setContainer(builder.build());

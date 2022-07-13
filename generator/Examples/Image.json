@@ -1,0 +1,40 @@
+{
+  "project-settings": {
+    "code-owner": "Venia",
+    "bundle-path": "../core/src/main/java",
+    "test-path": "../core/src/test/java",
+    "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+    "component-path": "venia",
+    "model-interface-pkg": "com.venia.core.models.commerce",
+    "model-impl-pkg": "com.venia.core.models.commerce"
+  },
+  "name": "meu-componente-image",
+  "title": "Meu Componente Imagem",
+  "group": "Venia - Content",
+  "type": "components",
+  "options": {
+    "js": false,
+    "jstxt": false,
+    "css": false,
+    "csstxt": false,
+    "html": false,
+    "html-content": false,
+    "slingmodel": false,
+    "testclass": false,
+    "junit-major-version": 5,
+    "content-exporter": false,
+    "model-adaptables": [
+      "request"
+    ],
+    "generic-javadoc": false,
+    "properties": [
+      {
+        "field": "image",
+        "type": "image",
+        "label": "Forneça uma image",
+        "json-expose": true,
+        "json-property": "image"
+      }
+    ]
+  }
+}

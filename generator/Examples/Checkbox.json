@@ -1,16 +1,16 @@
 {
   "project-settings": {
-    "code-owner": "Angular App",
+    "code-owner": "Venia",
     "bundle-path": "../core/src/main/java",
     "test-path": "../core/src/test/java",
     "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
-    "component-path": "angularapp",
-    "model-interface-pkg": "com.angularapp.core.models",
-    "model-impl-pkg": "com.angularapp.core.models.impl"
+    "component-path": "venia",
+    "model-interface-pkg": "com.venia.core.models.commerce",
+    "model-impl-pkg": "com.venia.core.models.commerce"
   },
-  "name": "basic-component",
-  "title": "Basic Component",
-  "group": "Angular App - Content",
+  "name": "meu-componente-checkbox",
+  "title": "Meu Componente Checkbox",
+  "group": "Venia - Content",
   "type": "components",
   "options": {
     "js": false,
@@ -19,10 +19,10 @@
     "csstxt": false,
     "html": false,
     "html-content": false,
-    "slingmodel": true,
+    "slingmodel": false,
     "testclass": false,
     "junit-major-version": 5,
-    "content-exporter": true,
+    "content-exporter": false,
     "model-adaptables": [
       "request"
     ],
