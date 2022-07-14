@@ -2,7 +2,6 @@ import React from 'react';
 
 const ComponenteDate = ({ date }) => {
     const array = date.split(',');
-   
   //console.log(array);
 
     return (
