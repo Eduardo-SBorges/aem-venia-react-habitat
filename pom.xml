@@ -184,6 +184,9 @@
                             <goals>
                                 <goal>npm</goal>
                             </goals>
+                            <configuration>
+                                <arguments>install npm i --legacy-peer-deps</arguments>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
