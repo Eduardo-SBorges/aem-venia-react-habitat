@@ -4,17 +4,32 @@
 <h1>Carrossel: </h1>
 <hr>
 
-<div class="owl-carousel owl-theme">
-     <div class="item"><h4>1</h4></div>
-     <div class="item"><h4>2</h4></div>
-     <div class="item"><h4>3</h4></div>
-     <div class="item"><h4>4</h4></div>
-     <div class="item"><h4>5</h4></div>
-     <div class="item"><h4>6</h4></div>
-     <div class="item"><h4>7</h4></div>
-     <div class="item"><h4>8</h4></div>
-     <div class="item"><h4>9</h4></div>
-     <div class="item"><h4>10</h4></div>
-     <div class="item"><h4>11</h4></div>
-     <div class="item"><h4>12</h4></div>
-</div>
+<!--/* Get all child resources */-->
+<h2>Lista de Continentes e seus Países:</h2>
+
+<div data-sly-list.continentMultifield="${resource.getChildren}" >
+
+     <div data-sly-test="${continentMultifield.name == 'continents'}">
+         <ul class="owl-carousel owl-theme" data-sly-list.continent="${continentMultifield.getChildren}">
+               <li class="item"><b>${continent.continentName}</b>
+
+                    <h3>Lista de Países:</h3>
+               
+                    <!--/* Get all child resources */-->
+                    <div data-sly-list.countryMultifield="${continent.getChildren}">
+                    
+                         <!--/* Keep only the countries multifield and iterate over its children */-->
+                         <ul data-sly-test="${countryMultifield.name == 'countries'}"
+                         data-sly-list.country="${countryMultifield.getChildren}">
+                         
+                              <div class="sub-item">
+                                   <img src="${country.fileReference}" alt="Bandeira do País">
+                                   <p><b>País: </b>${country.countryName}</p>
+                                   <p>Código do País: ${country.code}</p>
+                              </div>
+                         </ul>
+                    </div>
+               </li>
+         </ul>
+     </div>
+ </div>

@@ -1,0 +1,23 @@
+.owl-carousel .item {
+  background-color: gray;
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.sub-item {
+  background-color: aqua; 
+}
+
+.sub-item + .sub-item{
+  margin-top: 10px;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  display: block;
+}

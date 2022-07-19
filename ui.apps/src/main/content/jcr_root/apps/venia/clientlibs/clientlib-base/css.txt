@@ -1,3 +1,3 @@
 #base=css
 owl.carousel.min.css
-custom.css
+custom-carousel.css
