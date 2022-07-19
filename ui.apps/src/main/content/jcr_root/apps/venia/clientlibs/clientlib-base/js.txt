@@ -1,4 +1,4 @@
 #base=js
 jquery-3.6.0.min.js
 owl.carousel.min.js
-carousel.js
+custom-carousel.js
