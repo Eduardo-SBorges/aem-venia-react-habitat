@@ -8,8 +8,8 @@
         "model-interface-pkg": "com.venia.core.models.commerce",
         "model-impl-pkg": "com.venia.core.models.commerce"
     },
-    "name": "meu-componente-multifield",
-    "title": "Meu Componente Multifield",
+    "name": "example-multifield",
+    "title": "Examplo -  Multifield",
     "group": "Venia - Content",
     "type": "components",
     "options": {

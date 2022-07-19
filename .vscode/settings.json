@@ -4,5 +4,31 @@
   "yaml.format.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "typescript.preferences.quoteStyle": "single",
-  "prettier.embeddedLanguageFormatting": "off"
+  "prettier.embeddedLanguageFormatting": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+  "eslint.validate": ["javascript"],
+  "files.exclude": {
+    ".circleci": true,
+    "it.tests": true,
+    "ui.tests": true,
+    "all": true,
+    "ui.apps.structure": true,
+    "archetype.properties": true,
+    "LICENSE": true,
+    "ui.frontend/coverage": true,
+    "ui.frontend/dist": true,
+    "ui.frontend/node": true,
+    "ui.frontend/assembly.xml": true,
+    "ui.frontend/target": true,
+    "ui.frontend/package-lock.json": true,
+    "ui.frontend/webpack.common.js": true,
+    "ui.frontend/webpack.dev.js": true,
+    "ui.frontend/webpack.prod.js": true,
+    "ui.frontend/test-results": true,
+    "ui.frontend/babel.config.js": true,
+
+
+  }
 }

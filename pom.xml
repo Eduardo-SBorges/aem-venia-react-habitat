@@ -72,9 +72,9 @@
         <module>ui.apps.structure</module>
         <module>ui.config</module>
         <module>ui.content</module>
-<!--         <module>it.tests</module>
+        <module>it.tests</module>
         <module>ui.tests</module>
-        <module>dispatcher</module> -->
+        <!-- <module>dispatcher</module> -->
     </modules>
 
     <properties>

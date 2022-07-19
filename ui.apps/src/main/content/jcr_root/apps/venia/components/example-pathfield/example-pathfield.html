@@ -1,0 +1,9 @@
+<div
+data-component="Link"
+data-prop-href="${properties.href}"
+data-prop-is-blank="${properties.isBlank}"
+data-prop-is-external="${properties.isExternal}"></div>
+
+<sly
+data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+data-sly-call="${templates.placeholder @ isEmpty = !configured}" />

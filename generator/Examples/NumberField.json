@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.venia.core.models.commerce",
     "model-impl-pkg": "com.venia.core.models.commerce"
   },
-  "name": "meu-componente-number-field",
-  "title": "Meu Componente Number",
+  "name": "example-number-field",
+  "title": "Examplo - Number",
   "group": "Venia - Content",
   "type": "components",
   "options": {

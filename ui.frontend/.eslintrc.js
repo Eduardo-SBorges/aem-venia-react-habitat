@@ -52,6 +52,5 @@ module.exports = {
         // override the default which is more restrictive
         'react/prop-types': ['warn', { ignore: ['children'] }],
         'no-var': 0,
-        'header/header': [2, 'block', headerBlock],
     },
 };

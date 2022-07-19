@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.venia.core.models.commerce",
     "model-impl-pkg": "com.venia.core.models.commerce"
   },
-  "name": "meu-componente-pathfield",
-  "title": "Meu Componente Path Field",
+  "name": "example-pathfield",
+  "title": "Examplo - Path Field",
   "group": "Venia - Content",
   "type": "components",
   "options": {

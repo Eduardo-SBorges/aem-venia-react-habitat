@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.venia.core.models.commerce",
     "model-impl-pkg": "com.venia.core.models.commerce"
   },
-  "name": "meu-componente-checkbox",
-  "title": "Meu Componente Checkbox",
+  "name": "example-checkbox",
+  "title": "Examplo - Checkbox",
   "group": "Venia - Content",
   "type": "components",
   "options": {

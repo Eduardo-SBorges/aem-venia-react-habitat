@@ -11,5 +11,5 @@
  *    governing permissions and limitations under the License.
  *
  ******************************************************************************/
-import '../components';
+import '../App/App';
 import './main.scss';

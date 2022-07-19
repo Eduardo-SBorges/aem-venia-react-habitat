@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.venia.core.models.commerce",
     "model-impl-pkg": "com.venia.core.models.commerce"
   },
-  "name": "meu-componente-image",
-  "title": "Meu Componente Imagem",
+  "name": "example-image",
+  "title": "Examplo - Imagem",
   "group": "Venia - Content",
   "type": "components",
   "options": {

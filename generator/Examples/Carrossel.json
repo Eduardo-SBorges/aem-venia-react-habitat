@@ -8,8 +8,8 @@
     "model-interface-pkg": "com.venia.core.models.commerce",
     "model-impl-pkg": "com.venia.core.models.commerce"
   },
-  "name": "meu-componente-carrossel",
-  "title": "Meu Componente Carrossel",
+  "name": "example-carrossel",
+  "title": "Examplo - Carousel",
   "group": "Venia - Content",
   "type": "components",
   "options": {
